@@ -52,20 +52,20 @@ export default {
   data() {
     return {
       dialogTableVisible: false
-    }
+    };
   },
   computed: {
     errorLogs() {
-      return this.$store.getters.errorLogs
+      return this.$store.getters.errorLogs;
     }
   },
   methods: {
     clearAll() {
-      this.dialogTableVisible = false
-      this.$store.dispatch('errorLog/clearErrorLog')
+      this.dialogTableVisible = false;
+      this.$store.dispatch('errorLog/clearErrorLog');
     }
   }
-}
+};
 </script>
 
 <style scoped>

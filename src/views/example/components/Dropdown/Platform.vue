@@ -30,17 +30,17 @@ export default {
         { key: 'b-platform', name: 'b-platform' },
         { key: 'c-platform', name: 'c-platform' }
       ]
-    }
+    };
   },
   computed: {
     platforms: {
       get() {
-        return this.value
+        return this.value;
       },
       set(val) {
-        this.$emit('input', val)
+        this.$emit('input', val);
       }
     }
   }
-}
+};
 </script>

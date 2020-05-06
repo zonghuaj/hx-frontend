@@ -50,7 +50,7 @@
 </template>
 
 <script>
-import MarkdownEditor from '@/components/MarkdownEditor'
+import MarkdownEditor from '@/components/MarkdownEditor';
 
 const content = `
 **This is test**
@@ -59,7 +59,7 @@ const content = `
 * element
 * webpack
 
-`
+`;
 export default {
   name: 'MarkdownDemo',
   components: { MarkdownEditor },
@@ -75,20 +75,20 @@ export default {
         'zh': 'zh_CN',
         'es': 'es_ES'
       }
-    }
+    };
   },
   computed: {
     language() {
-      return this.languageTypeList['en']
+      return this.languageTypeList['en'];
     }
   },
   methods: {
     getHtml() {
-      this.html = this.$refs.markdownEditor.getHtml()
-      console.log(this.html)
+      this.html = this.$refs.markdownEditor.getHtml();
+      console.log(this.html);
     }
   }
-}
+};
 </script>
 
 <style scoped>

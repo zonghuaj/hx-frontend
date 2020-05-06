@@ -73,8 +73,8 @@
 </template>
 
 <script>
-import { toggleClass } from '@/utils'
-import '@/assets/custom-theme/index.css' // the theme changed version element-ui css
+import { toggleClass } from '@/utils';
+import '@/assets/custom-theme/index.css'; // the theme changed version element-ui css
 
 export default {
   name: 'Theme',
@@ -90,14 +90,14 @@ export default {
       ],
       slideValue: 50,
       radio: 3
-    }
+    };
   },
   watch: {
     theme() {
-      toggleClass(document.body, 'custom-theme')
+      toggleClass(document.body, 'custom-theme');
     }
   }
-}
+};
 </script>
 
 <style scoped>

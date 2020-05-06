@@ -78,7 +78,7 @@
 </template>
 
 <script>
-import { fetchList } from '@/api/article'
+import { fetchList } from '@/api/article';
 
 export default {
   name: 'InlineEditTable',
@@ -88,8 +88,8 @@ export default {
         published: 'success',
         draft: 'info',
         deleted: 'danger'
-      }
-      return statusMap[status]
+      };
+      return statusMap[status];
     }
   },
   data() {
@@ -100,41 +100,41 @@ export default {
         page: 1,
         limit: 10
       }
-    }
+    };
   },
   created() {
-    this.getList()
+    this.getList();
   },
   methods: {
     async getList() {
-      this.listLoading = true
-      const { data } = await fetchList(this.listQuery)
-      const items = data.items
+      this.listLoading = true;
+      const { data } = await fetchList(this.listQuery);
+      const items = data.items;
       this.list = items.map(v => {
-        this.$set(v, 'edit', false) // https://vuejs.org/v2/guide/reactivity.html
-        v.originalTitle = v.title //  will be used when user click the cancel botton
-        return v
-      })
-      this.listLoading = false
+        this.$set(v, 'edit', false); // https://vuejs.org/v2/guide/reactivity.html
+        v.originalTitle = v.title; //  will be used when user click the cancel botton
+        return v;
+      });
+      this.listLoading = false;
     },
     cancelEdit(row) {
-      row.title = row.originalTitle
-      row.edit = false
+      row.title = row.originalTitle;
+      row.edit = false;
       this.$message({
         message: 'The title has been restored to the original value',
         type: 'warning'
-      })
+      });
     },
     confirmEdit(row) {
-      row.edit = false
-      row.originalTitle = row.title
+      row.edit = false;
+      row.originalTitle = row.title;
       this.$message({
         message: 'The title has been edited',
         type: 'success'
-      })
+      });
     }
   }
-}
+};
 </script>
 
 <style scoped>

@@ -17,7 +17,7 @@
 </template>
 
 <script>
-import elDragDialog from '@/directive/el-drag-dialog' // base on element-ui
+import elDragDialog from '@/directive/el-drag-dialog'; // base on element-ui
 
 export default {
   name: 'DragDialogDemo',
@@ -49,13 +49,13 @@ export default {
         name: 'John Smith',
         address: 'No.1518,  Jinshajiang Road, Putuo District'
       }]
-    }
+    };
   },
   methods: {
     // v-el-drag-dialog onDrag callback function
     handleDrag() {
-      this.$refs.select.blur()
+      this.$refs.select.blur();
     }
   }
-}
+};
 </script>

@@ -18,9 +18,9 @@
 </template>
 
 <script>
-import { mapGetters } from 'vuex'
-import PanThumb from '@/components/PanThumb'
-import GithubCorner from '@/components/GithubCorner'
+import { mapGetters } from 'vuex';
+import PanThumb from '@/components/PanThumb';
+import GithubCorner from '@/components/GithubCorner';
 
 export default {
   name: 'DashboardEditor',
@@ -28,7 +28,7 @@ export default {
   data() {
     return {
       emptyGif: 'https://wpimg.wallstcn.com/0e03b7da-db9e-4819-ba10-9016ddfdaed3'
-    }
+    };
   },
   computed: {
     ...mapGetters([
@@ -37,7 +37,7 @@ export default {
       'roles'
     ])
   }
-}
+};
 </script>
 
 <style lang="scss" scoped>

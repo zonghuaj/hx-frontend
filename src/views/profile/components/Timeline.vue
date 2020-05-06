@@ -37,7 +37,7 @@ export default {
           content: 'PanJiaChen committed 2019/4/23 20:46'
         }
       ]
-    }
+    };
   }
-}
+};
 </script>

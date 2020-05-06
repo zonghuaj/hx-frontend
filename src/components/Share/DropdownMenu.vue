@@ -16,7 +16,7 @@ export default {
     items: {
       type: Array,
       default: function() {
-        return []
+        return [];
       }
     },
     title: {
@@ -27,14 +27,14 @@ export default {
   data() {
     return {
       isActive: false
-    }
+    };
   },
   methods: {
     clickTitle() {
-      this.isActive = !this.isActive
+      this.isActive = !this.isActive;
     }
   }
-}
+};
 </script>
 
 <style lang="scss" >

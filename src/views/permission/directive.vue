@@ -67,9 +67,9 @@
 </template>
 
 <script>
-import permission from '@/directive/permission/index.js' // 权限判断指令
-import checkPermission from '@/utils/permission' // 权限判断函数
-import SwitchRoles from './components/SwitchRoles'
+import permission from '@/directive/permission/index.js'; // 权限判断指令
+import checkPermission from '@/utils/permission'; // 权限判断函数
+import SwitchRoles from './components/SwitchRoles';
 
 export default {
   name: 'DirectivePermission',
@@ -78,15 +78,15 @@ export default {
   data() {
     return {
       key: 1 // 为了能每次切换权限的时候重新初始化指令
-    }
+    };
   },
   methods: {
     checkPermission,
     handleRolesChange() {
-      this.key++
+      this.key++;
     }
   }
-}
+};
 </script>
 
 <style lang="scss" scoped>

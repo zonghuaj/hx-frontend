@@ -29,11 +29,11 @@
 </template>
 
 <script>
-import { mapGetters } from 'vuex'
-import UserCard from './components/UserCard'
-import Activity from './components/Activity'
-import Timeline from './components/Timeline'
-import Account from './components/Account'
+import { mapGetters } from 'vuex';
+import UserCard from './components/UserCard';
+import Activity from './components/Activity';
+import Timeline from './components/Timeline';
+import Account from './components/Account';
 
 export default {
   name: 'Profile',
@@ -42,7 +42,7 @@ export default {
     return {
       user: {},
       activeTab: 'activity'
-    }
+    };
   },
   computed: {
     ...mapGetters([
@@ -52,7 +52,7 @@ export default {
     ])
   },
   created() {
-    this.getUser()
+    this.getUser();
   },
   methods: {
     getUser() {
@@ -61,8 +61,8 @@ export default {
         role: this.roles.join(' | '),
         email: 'admin@test.com',
         avatar: this.avatar
-      }
+      };
     }
   }
-}
+};
 </script>

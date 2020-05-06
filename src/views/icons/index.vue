@@ -40,9 +40,9 @@
 </template>
 
 <script>
-import clipboard from '@/utils/clipboard'
-import svgIcons from './svg-icons'
-import elementIcons from './element-icons'
+import clipboard from '@/utils/clipboard';
+import svgIcons from './svg-icons';
+import elementIcons from './element-icons';
 
 export default {
   name: 'Icons',
@@ -50,20 +50,20 @@ export default {
     return {
       svgIcons,
       elementIcons
-    }
+    };
   },
   methods: {
     generateIconCode(symbol) {
-      return `<svg-icon icon-class="${symbol}" />`
+      return `<svg-icon icon-class="${symbol}" />`;
     },
     generateElementIconCode(symbol) {
-      return `<i class="el-icon-${symbol}" />`
+      return `<i class="el-icon-${symbol}" />`;
     },
     handleClipboard(text, event) {
-      clipboard(text, event)
+      clipboard(text, event);
     }
   }
-}
+};
 </script>
 
 <style lang="scss" scoped>

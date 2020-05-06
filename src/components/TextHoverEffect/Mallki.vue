@@ -18,7 +18,7 @@ export default {
       default: 'vue-element-admin'
     }
   }
-}
+};
 </script>
 
 <style>
