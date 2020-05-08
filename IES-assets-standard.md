@@ -1,13 +1,13 @@
-Accenture Technology Asset 前端工程规范（v2.0.1）
+ Technology Asset 前端工程规范（v2.0.1）
 
 
 UI/UX 规范
 
-UI/UX 规范遵循 Accenture Technology Asset 资产项目设计规范。详情在 Teams 中 Accenture Technology Asset > General  Channel 的文件夹 UI-Mockup > Guideline 下。
+UI/UX 规范遵循  Technology Asset 资产项目设计规范。详情在 Teams 中  Technology Asset > General  Channel 的文件夹 UI-Mockup > Guideline 下。
 
-可使用如下链接直接访问（权限问题联系：yelena.yantao.cui@accenture.com）
 
-Accenture Technology Asset 资产项目设计规范
+
+ Technology Asset 资产项目设计规范
 
 
 技术规范
