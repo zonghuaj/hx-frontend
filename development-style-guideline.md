@@ -1,5 +1,7 @@
 # Vue.js 组件编码规范
 
+:::demo
+
 <p align="center">
   <img src="https://raw.githubusercontent.com/pablohpsilva/vuejs-component-style-guide/master/img/logo.png"/>
 </p>
